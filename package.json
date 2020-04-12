@@ -1,0 +1,38 @@
+{
+  "name": "yupspress",
+  "version": "0.1.1",
+  "description": "An integration of Express, Yup, and Typescript",
+  "scripts": {
+    "watch": "tsc --watch",
+    "serve": "nodemon dist/demo/demo.js",
+    "test": "mocha dist/test/**/*.js"
+  },
+  "keywords": [
+    "yup",
+    "express",
+    "typescript"
+  ],
+  "author": "Michael Lorton",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "http-status-codes": "^1.4.0",
+    "lodash": "^4.17.15",
+    "yup": "^0.28.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "^7.0.2",
+    "@types/sinon": "^9.0.0",
+    "@types/yup": "^0.26.35",
+    "eslint": "^6.8.0",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.3",
+    "sinon": "^9.0.2",
+    "typescript": "^3.8.3"
+  }
+}

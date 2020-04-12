@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" type="text/css" href="./app.css">
+</head>
+
+<body>
+    <h1>Yupress Tester</h1>
+    <div class="displayBox">
+        <h2>Input</h2>
+        <div class="loggedout">
+            <form onsubmit="event.preventDefault(); logIn(this)">
+                <input name="username" value="michael" />
+                <input type="password" name="password" value="swordfish" />
+                <button>
+                    Log In
+                </button>
+                <div class="hint">
+                    Available log-ins are "michael/swordfish" and "mary/catfish".
+                </div>
+            </form>
+        </div>
+        <div class="loggedin">
+            <button onClick="logOut()">
+                Log Out
+            </button>
+        </div>
+        <div>
+            <form onsubmit="event.preventDefault(); checkId(this)">
+                <input name="user" value="1" />
+                <button>
+                    Check against ID
+                </button>
+                <div class="hint">
+                    This endpoint takes a numeric user ID and returns data about
+                    the current user, together with a flag to indicate whether userId
+                    is correct. Try running it while logged out or
+                    with an nonexistent ID (like "3") or invalid ID (like "three");
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="displayBox">
+        <h2>XHR Results</h2>
+        <div id="displayStatus" class="displayResults">—
+        </div>
+        <div id="displayBody" class="displayResults">—
+        </div>
+    </div>
+
+</body>
+
+</html>

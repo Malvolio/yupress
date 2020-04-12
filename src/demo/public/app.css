@@ -1,0 +1,42 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+.displayBox {
+  width: 800px;
+  margin: 20px;
+  padding: 0px 20px 10px;
+  border-radius: 8px;
+  border: thin solid black;
+  min-height: 30px;
+}
+
+#displayStatus,
+#displayBody {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input {
+  font-size: 16px;
+  display: block;
+  margin: 10px 0;
+}
+
+.hint {
+  font-size: 9px;
+  font-style: italic;
+  font-weight: normal;
+  padding: 10px 0;
+}
